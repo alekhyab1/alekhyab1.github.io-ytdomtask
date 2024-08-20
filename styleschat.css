@@ -8,7 +8,48 @@ body, html {
 .header {
     background-color: #202020;
     padding: 10px 20px;
+} 
+.top-bar {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: space-around;
+    padding: 10px;
+    /* margin: 10px; */
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+.logo {
+    max-height: 50px; /* Limit height for images */
+    margin-left: 20px;
+  }
+.yttext{
+    margin-right: 250px;
+} 
+.search-box {
+    padding: 10px 20px;
+    width: 20%; /* Adjust based on preference */
+    /* margin: 0 10px; */
+    border: 2px solid #ccc;
+    border-radius: 4px;
 }
+.header-icon {
+    color: black;
+    font-size: 20px;
+    margin-left: 2px;
+    cursor: pointer; /* Indicates interactive elements */
+}
+  
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering the video */
+    padding: 20px;
+  }
+  
+iframe {
+    margin: 10px; /* Space between videos if multiple */
+  }
 
 #searchInput {
     width: 100%;
