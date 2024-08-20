@@ -1,0 +1,83 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #202020;
+    padding: 10px 20px;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+}
+
+#videoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 16px;
+}
+
+.thumbnail {
+    background: white;
+    width: 320px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.thumbnail img {
+    width: 100%; /* 320px */
+    height: 180px; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+.video-info {
+    padding: 10px;
+    height: 120px; /* Fixed height for consistency */
+    overflow: hidden;
+}
+
+.video-info a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.video-info p {
+    margin-top: 5px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #666;
+}
+
+.pagination {
+    text-align: center;
+    padding: 20px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+    background: #5c5c5c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.pagination button:hover {
+    background: #333;
+}
